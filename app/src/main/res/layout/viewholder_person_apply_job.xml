@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/ivWorkerImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dummy_user_picture" />
+
+            <TextView
+                android:id="@+id/tvWorkerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_toRightOf="@id/ivWorkerImage"
+                android:text="Katherine"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative"
+            android:layout_margin="@dimen/margin"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/tvSkill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:text="Skills"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/tvHouseKeeping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvSkill"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:text=" - Good at HouseKeeping" />
+
+                <TextView
+                    android:id="@+id/tvCleaning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvHouseKeeping"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:text=" - Good at Cleaning" />
+
+                <TextView
+                    android:id="@+id/tvWashing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvCleaning"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:layout_weight="1"
+                    android:text=" - Good at Washing" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="Experience"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/tvHouseKeepingExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvExperience"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:text=" - House Keeping" />
+
+                <TextView
+                    android:id="@+id/tvWashingExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvHouseKeepingExperience"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:text=" - Washing" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
